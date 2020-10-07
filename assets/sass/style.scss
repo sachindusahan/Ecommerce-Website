@@ -80,12 +80,14 @@ header {
                             margin: 10px 0 5px 20px;
                             letter-spacing: .7px;
                             font-family: 'Raleway',sans-serif;
+                            font-weight: bold;
                             text-transform: uppercase;
                         }
                         h4 {
                             font-weight: 400;
                             color: #787878;
                             font-size: 16px;
+                            font-weight: bold;
                             margin: 25px 0 25px 35px;
                             letter-spacing: .8px;
                             font-family: 'Raleway',sans-serif;
@@ -275,5 +277,45 @@ header {
     to {
         width: 500px;
         height: 40px;
+    }
+}
+// end of navigation bar //
+header {
+    .tags {
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: "Raleway", sans-serif;
+        .tag1,
+        .tag2,
+        .tag3,
+        .tag4,
+        .tag5,
+        .tag6,
+        .tag7,
+         div {
+             display: flex;
+             
+            h6 {
+                border-radius: 10px;
+                background: #Fff;
+                padding: 6px 16px;
+                box-shadow: 0 0 4px #787878;
+            }
+            h6:hover {
+                border: none;
+                box-shadow: 0 0 3px rgba(81, 203, 238, 1);
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    header {
+        .tags {
+            height: 100px;
+        }
     }
 }

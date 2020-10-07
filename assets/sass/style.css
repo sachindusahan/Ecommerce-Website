@@ -68,12 +68,14 @@ header nav ul.m-response .fa-bars .mobile-bar .home h3, header nav ul.m-response
   margin: 10px 0 5px 20px;
   letter-spacing: 0.7px;
   font-family: "Raleway", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
 }
 header nav ul.m-response .fa-bars .mobile-bar .home h4, header nav ul.m-response .fa-bars .mobile-bar .account h4 {
   font-weight: 400;
   color: #787878;
   font-size: 16px;
+  font-weight: bold;
   margin: 25px 0 25px 35px;
   letter-spacing: 0.8px;
   font-family: "Raleway", sans-serif;
@@ -247,6 +249,55 @@ header nav ul.m-response .fa-search input[type=search]:focus {
   to {
     width: 500px;
     height: 40px;
+  }
+}
+header .tags {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Raleway", sans-serif;
+}
+header .tags .tag1,
+header .tags .tag2,
+header .tags .tag3,
+header .tags .tag4,
+header .tags .tag5,
+header .tags .tag6,
+header .tags .tag7,
+header .tags div {
+  display: flex;
+}
+header .tags .tag1 h6,
+header .tags .tag2 h6,
+header .tags .tag3 h6,
+header .tags .tag4 h6,
+header .tags .tag5 h6,
+header .tags .tag6 h6,
+header .tags .tag7 h6,
+header .tags div h6 {
+  border-radius: 10px;
+  background: #Fff;
+  padding: 6px 16px;
+  box-shadow: 0 0 4px #787878;
+}
+header .tags .tag1 h6:hover,
+header .tags .tag2 h6:hover,
+header .tags .tag3 h6:hover,
+header .tags .tag4 h6:hover,
+header .tags .tag5 h6:hover,
+header .tags .tag6 h6:hover,
+header .tags .tag7 h6:hover,
+header .tags div h6:hover {
+  border: none;
+  box-shadow: 0 0 3px #51cbee;
+}
+
+@media (max-width: 500px) {
+  header .tags {
+    height: 100px;
   }
 }
 
