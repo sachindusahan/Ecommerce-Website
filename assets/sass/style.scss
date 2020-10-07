@@ -360,7 +360,10 @@ header {
 @media (max-width: 800px) {
     header {
         .hero-section {
-            padding-left: 10px;
+            padding-left: 15px;
+            h5,h4 {
+                animation-name: no;
+            }
         }
     }
 }

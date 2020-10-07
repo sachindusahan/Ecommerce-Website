@@ -338,7 +338,10 @@ header .hero-section .h5:hover {
 
 @media (max-width: 800px) {
   header .hero-section {
-    padding-left: 10px;
+    padding-left: 15px;
+  }
+  header .hero-section h5, header .hero-section h4 {
+    animation-name: no;
   }
 }
 @keyframes herosection {
