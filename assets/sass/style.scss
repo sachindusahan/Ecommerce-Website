@@ -32,6 +32,9 @@ header {
         width: 100%;
         height: 50px;
         color: #FAFAFF;
+        ul.navigation {
+            display: none;
+        }
         ul.m-response {
             width: 100%;
             display: flex;
@@ -182,5 +185,95 @@ header {
     to {
         width: 230px;
         margin: 0 10px 0 0;
+    }
+}
+
+@media (min-width: 800px) {
+    header {
+        nav {
+            ul.m-response {
+                display: none;
+            }
+            ul.navigation {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: space-evenly;
+                li {
+                    position: relative;
+                    a {
+                        color: #FFF;
+                        font-weight: 1000;
+                        text-transform: capitalize;
+                        font-family: 'Raleway',sans-serif;
+                        i {
+                            margin: 0 5px 0 0;
+                        }
+                    }
+                    a:hover::after,.active::after {
+                        content: '';
+                        background: orange;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 2px;
+                        animation-name: textunderline;
+                        animation-duration: .10s;
+                        animation-fill-mode: forwards;
+                    }
+                }
+                .fa-search:hover {
+                    input {
+                        display: block;
+                    }
+                }
+                .fa-search {
+                    position: relative;
+                    input {
+                        position: absolute;
+                        right: 0;
+                        top: 40px;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        padding: 0 0 0 10px;
+                        border: 1px solid #555;
+                        animation-name: specila-search;
+                        animation-duration: .5s;
+                        animation-fill-mode: forwards;
+                        display: none;
+                        z-index: 2;
+                    }
+                    input[type=search]:focus {
+                        box-shadow: 0 0 3px rgba(81, 203, 238, 1);
+                        -webkit-transition: all 0.30s ease-in-out;
+                        -moz-transition: all 0.30s ease-in-out;
+                        -ms-transition: all 0.30s ease-in-out;
+                        border: 1px solid rgba(81, 203, 238, 1);
+                        -o-transition: all 0.30s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes textunderline {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes specila-search {
+    from {
+        width: 0;
+        height: 0;
+    }
+    to {
+        width: 500px;
+        height: 40px;
     }
 }

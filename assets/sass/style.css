@@ -19,6 +19,9 @@ header nav {
   height: 50px;
   color: #FAFAFF;
 }
+header nav ul.navigation {
+  display: none;
+}
 header nav ul.m-response {
   width: 100%;
   display: flex;
@@ -161,6 +164,89 @@ header nav ul.m-response .fa-search input[type=search]:focus {
   to {
     width: 230px;
     margin: 0 10px 0 0;
+  }
+}
+@media (min-width: 800px) {
+  header nav ul.m-response {
+    display: none;
+  }
+  header nav ul.navigation {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header nav ul.navigation li {
+    position: relative;
+  }
+  header nav ul.navigation li a {
+    color: #FFF;
+    font-weight: 1000;
+    text-transform: capitalize;
+    font-family: "Raleway", sans-serif;
+  }
+  header nav ul.navigation li a i {
+    margin: 0 5px 0 0;
+  }
+  header nav ul.navigation li a:hover::after, header nav ul.navigation li .active::after {
+    content: "";
+    background: orange;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    animation-name: textunderline;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+  }
+  header nav ul.navigation .fa-search:hover input {
+    display: block;
+  }
+  header nav ul.navigation .fa-search {
+    position: relative;
+  }
+  header nav ul.navigation .fa-search input {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    border: 1px solid #555;
+    animation-name: specila-search;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    display: none;
+    z-index: 2;
+  }
+  header nav ul.navigation .fa-search input[type=search]:focus {
+    box-shadow: 0 0 3px #51cbee;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    border: 1px solid #51cbee;
+    -o-transition: all 0.3s ease-in-out;
+  }
+}
+@keyframes textunderline {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes specila-search {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 500px;
+    height: 40px;
   }
 }
 
