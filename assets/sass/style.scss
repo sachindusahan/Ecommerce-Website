@@ -377,11 +377,11 @@ header {
     }
 }
 
-.first-categorie {
+.first-categorie,.watchs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    .cloths {
+    .cloths,.watch-brand {
         background: #FFF;
         width: 202px;
         min-height: 320px;
