@@ -355,5 +355,67 @@ header .hero-section .h5:hover {
     margin: 0 0 0 10px;
   }
 }
+.first-categorie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.first-categorie .cloths {
+  background: #FFF;
+  width: 202px;
+  min-height: 320px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.first-categorie .cloths img {
+  width: 200px;
+  position: relative;
+  top: 0;
+}
+.first-categorie .cloths .topic {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin: 5px 0;
+}
+.first-categorie .cloths .price {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin: 5px 0;
+}
+.first-categorie .cloths .price-blour {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin: 5px 0;
+  color: #787878;
+  position: relative;
+}
+.first-categorie .cloths .price-blour::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #000;
+  width: 100%;
+  height: 1px;
+}
+.first-categorie .cloths .btn {
+  border: none;
+  outline: none;
+  background: Red;
+  color: #FFF;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  padding: 4px;
+  margin: 0 0 5px 0;
+}
+.first-categorie .cloths .btn:hover {
+  box-shadow: 0 0 5px #787878;
+}
 
 /*# sourceMappingURL=style.css.map */
