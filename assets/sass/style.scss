@@ -439,3 +439,36 @@ header {
         }
     }
 }
+
+main {
+    .watchs {
+        .top {
+            width: 100vw;
+            height: 100px;
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            font-family: "Raleway",sans-serif;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 0 0 20px;
+            h1 {
+                color: #000;
+                font-size: 15px;
+                font-weight: 400; // normal
+                margin: 10px 0;
+                
+            }   
+            button {
+                border: none;
+                outline: none;
+                padding: 8px 15px;
+                border: 2px solid #000;
+                font-weight: 700; // bold
+                border-radius: 5px;
+                background: transparent;
+                color: #000;
+            }  
+        }
+    }
+}

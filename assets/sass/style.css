@@ -418,4 +418,32 @@ header .hero-section .h5:hover {
   box-shadow: 0 0 5px #787878;
 }
 
+main .watchs .top {
+  width: 100vw;
+  height: 100px;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0 0 20px;
+}
+main .watchs .top h1 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+main .watchs .top button {
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  border: 2px solid #000;
+  font-weight: 700;
+  border-radius: 5px;
+  background: transparent;
+  color: #000;
+}
+
 /*# sourceMappingURL=style.css.map */
