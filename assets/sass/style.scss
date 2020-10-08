@@ -377,11 +377,11 @@ header {
     }
 }
 
-.first-categorie {
+.first-categorie,.watchs {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    .cloths {
+    .cloths,.watch-brand {
         background: #FFF;
         width: 202px;
         min-height: 320px;
@@ -436,6 +436,39 @@ header {
         }
         .btn:hover {
             box-shadow: 0 0 5px #787878;
+        }
+    }
+}
+
+main {
+    .watchs {
+        .top {
+            width: 100vw;
+            height: 100px;
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            font-family: "Raleway",sans-serif;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 0 0 20px;
+            h1 {
+                color: #000;
+                font-size: 15px;
+                font-weight: 400; // normal
+                margin: 10px 0;
+                
+            }   
+            button {
+                border: none;
+                outline: none;
+                padding: 8px 15px;
+                border: 2px solid #000;
+                font-weight: 700; // bold
+                border-radius: 5px;
+                background: transparent;
+                color: #000;
+            }  
         }
     }
 }
