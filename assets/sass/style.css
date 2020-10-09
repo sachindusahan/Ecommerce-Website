@@ -355,12 +355,12 @@ header .hero-section .h5:hover {
     margin: 0 0 0 10px;
   }
 }
-.first-categorie, .watchs {
+.first-categorie, .watchs, .shoes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.first-categorie .cloths, .first-categorie .watch-brand, .watchs .cloths, .watchs .watch-brand {
+.first-categorie .cloths, .first-categorie .watch-brand, .watchs .cloths, .watchs .watch-brand, .shoes .cloths, .shoes .watch-brand {
   background: #FFF;
   width: 202px;
   min-height: 320px;
@@ -370,24 +370,24 @@ header .hero-section .h5:hover {
   align-items: center;
   justify-content: center;
 }
-.first-categorie .cloths img, .first-categorie .watch-brand img, .watchs .cloths img, .watchs .watch-brand img {
+.first-categorie .cloths img, .first-categorie .watch-brand img, .watchs .cloths img, .watchs .watch-brand img, .shoes .cloths img, .shoes .watch-brand img {
   width: 200px;
   position: relative;
   top: 0;
 }
-.first-categorie .cloths .topic, .first-categorie .watch-brand .topic, .watchs .cloths .topic, .watchs .watch-brand .topic {
+.first-categorie .cloths .topic, .first-categorie .watch-brand .topic, .watchs .cloths .topic, .watchs .watch-brand .topic, .shoes .cloths .topic, .shoes .watch-brand .topic {
   font-size: 20px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   margin: 5px 0;
 }
-.first-categorie .cloths .price, .first-categorie .watch-brand .price, .watchs .cloths .price, .watchs .watch-brand .price {
+.first-categorie .cloths .price, .first-categorie .watch-brand .price, .watchs .cloths .price, .watchs .watch-brand .price, .shoes .cloths .price, .shoes .watch-brand .price {
   font-size: 20px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   margin: 5px 0;
 }
-.first-categorie .cloths .price-blour, .first-categorie .watch-brand .price-blour, .watchs .cloths .price-blour, .watchs .watch-brand .price-blour {
+.first-categorie .cloths .price-blour, .first-categorie .watch-brand .price-blour, .watchs .cloths .price-blour, .watchs .watch-brand .price-blour, .shoes .cloths .price-blour, .shoes .watch-brand .price-blour {
   font-size: 20px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
@@ -395,7 +395,7 @@ header .hero-section .h5:hover {
   color: #787878;
   position: relative;
 }
-.first-categorie .cloths .price-blour::after, .first-categorie .watch-brand .price-blour::after, .watchs .cloths .price-blour::after, .watchs .watch-brand .price-blour::after {
+.first-categorie .cloths .price-blour::after, .first-categorie .watch-brand .price-blour::after, .watchs .cloths .price-blour::after, .watchs .watch-brand .price-blour::after, .shoes .cloths .price-blour::after, .shoes .watch-brand .price-blour::after {
   content: " ";
   position: absolute;
   top: 50%;
@@ -404,7 +404,7 @@ header .hero-section .h5:hover {
   width: 100%;
   height: 1px;
 }
-.first-categorie .cloths .btn, .first-categorie .watch-brand .btn, .watchs .cloths .btn, .watchs .watch-brand .btn {
+.first-categorie .cloths .btn, .first-categorie .watch-brand .btn, .watchs .cloths .btn, .watchs .watch-brand .btn, .shoes .cloths .btn, .shoes .watch-brand .btn {
   border: none;
   outline: none;
   background: Red;
@@ -414,11 +414,11 @@ header .hero-section .h5:hover {
   padding: 4px;
   margin: 0 0 5px 0;
 }
-.first-categorie .cloths .btn:hover, .first-categorie .watch-brand .btn:hover, .watchs .cloths .btn:hover, .watchs .watch-brand .btn:hover {
+.first-categorie .cloths .btn:hover, .first-categorie .watch-brand .btn:hover, .watchs .cloths .btn:hover, .watchs .watch-brand .btn:hover, .shoes .cloths .btn:hover, .shoes .watch-brand .btn:hover {
   box-shadow: 0 0 5px #787878;
 }
 
-main .watchs .top {
+main .watchs .top, main .shoes .top {
   width: 100vw;
   height: 100px;
   background-color: orange;
@@ -428,14 +428,15 @@ main .watchs .top {
   justify-content: center;
   align-items: flex-start;
   padding: 0 0 0 20px;
+  margin: 30px 0 10px 0;
 }
-main .watchs .top h1 {
+main .watchs .top h1, main .shoes .top h1 {
   color: #000;
   font-size: 15px;
   font-weight: 400;
   margin: 10px 0;
 }
-main .watchs .top button {
+main .watchs .top button, main .shoes .top button {
   border: none;
   outline: none;
   padding: 8px 15px;
@@ -444,6 +445,10 @@ main .watchs .top button {
   border-radius: 5px;
   background: transparent;
   color: #000;
+}
+main .watchs .top button:hover, main .shoes .top button:hover {
+  color: #FFF;
+  border: 1px solid #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

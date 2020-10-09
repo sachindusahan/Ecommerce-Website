@@ -377,7 +377,7 @@ header {
     }
 }
 
-.first-categorie,.watchs {
+.first-categorie,.watchs ,.shoes{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -441,7 +441,7 @@ header {
 }
 
 main {
-    .watchs {
+    .watchs,.shoes {
         .top {
             width: 100vw;
             height: 100px;
@@ -452,6 +452,7 @@ main {
             justify-content: center;
             align-items: flex-start;
             padding: 0 0 0 20px;
+            margin: 30px 0 10px 0;
             h1 {
                 color: #000;
                 font-size: 15px;
@@ -469,6 +470,10 @@ main {
                 background: transparent;
                 color: #000;
             }  
+            button:hover {
+                color: #FFF;
+                border: 1px solid #fff;
+            }
         }
     }
 }
