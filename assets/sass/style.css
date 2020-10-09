@@ -5,6 +5,24 @@ body {
   background: #FAFAFF;
 }
 
+input[type=password], input[type=email], input[type=text], textarea {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=password]:focus, input[type=email]:focus, input[type=search]:focus, input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 3px #51cbee;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #51cbee;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -251,6 +269,12 @@ header nav ul.m-response .fa-search input[type=search]:focus {
     height: 40px;
   }
 }
+header .cloths {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  margin: 20px 0 10px 10px;
+  font-weight: 700;
+}
 header .tags {
   width: 100vw;
   height: 50px;
@@ -300,59 +324,21 @@ header .tags div h6:hover {
     height: 100px;
   }
 }
-header .hero-section {
-  width: 100vw;
-  background: orange;
-  padding-bottom: 20px;
-  margin: 10px 0;
+.hero-section {
+  overflow: hidden;
 }
-header .hero-section h4 {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  padding-top: 20px;
-  animation-name: herosection;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-header .hero-section h5 {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  padding: 10px 0px;
-  animation-name: herosection;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  font-size: 15px;
-}
-header .hero-section .h5 {
-  border: 1px solid #000;
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 5px;
-}
-header .hero-section .h5:hover {
-  border-color: #FFF;
-  color: #FFF;
-  transition: all 0.3s ease-in-out;
+.hero-section img {
+  position: relative;
+  height: 300px;
 }
 
-@media (max-width: 800px) {
-  header .hero-section {
-    padding-left: 15px;
+@media (min-width: 500px) {
+  .hero-section {
+    overflow: hidden;
   }
-  header .hero-section h5, header .hero-section h4 {
-    animation-name: no;
-  }
-}
-@keyframes herosection {
-  0% {
-    margin: 0 0 0 10px;
-  }
-  50% {
-    margin: 0 0 0 250px;
-  }
-  100% {
-    margin: 0 0 0 10px;
+  .hero-section img {
+    position: relative;
+    width: 100%;
   }
 }
 .first-categorie, .watchs, .shoes {
@@ -421,7 +407,7 @@ header .hero-section .h5:hover {
 main .watchs .top, main .shoes .top {
   width: 100vw;
   height: 100px;
-  background-color: orange;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
@@ -431,24 +417,76 @@ main .watchs .top, main .shoes .top {
   margin: 30px 0 10px 0;
 }
 main .watchs .top h1, main .shoes .top h1 {
-  color: #000;
-  font-size: 15px;
-  font-weight: 400;
-  margin: 10px 0;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  margin: 20px 0 10px 10px;
+  font-weight: 700;
 }
-main .watchs .top button, main .shoes .top button {
+
+main footer {
+  font-family: "Montserrat", sans-serif;
+  margin: 50px 0 0 0;
+  padding-top: 30px;
+  background-color: #383340;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+main footer div .contacts, main footer div .company, main footer div .pages {
+  margin: 20px 10px;
+}
+main footer div .contacts h4, main footer div .company h4, main footer div .pages h4 {
+  color: #797979;
+  font-size: 15px;
+}
+main footer div .subscribe h6 {
+  color: #797979;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+main footer div .subscribe .email {
+  margin-bottom: 20px;
+}
+main footer div .subscribe .email button {
   border: none;
   outline: none;
-  padding: 8px 15px;
-  border: 2px solid #000;
-  font-weight: 700;
-  border-radius: 5px;
-  background: transparent;
-  color: #000;
-}
-main .watchs .top button:hover, main .shoes .top button:hover {
+  height: 30.2px;
+  padding: 0 10px;
   color: #FFF;
-  border: 1px solid #fff;
+  font-weight: bold;
+  background: #256effff;
+}
+main footer div .subscribe .email input {
+  height: 30px;
+}
+main footer div .subscribe .contact-icons i {
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 50%;
+}
+main footer div .subscribe .contact-icons i:hover {
+  background: #256effff;
+  transition: background 3s;
+}
+main footer .breake-2, main footer .breake-1 {
+  display: flex;
+  flex: 1;
+}
+main footer .breake-1 .pages, main footer .breake-1 .company {
+  flex: 1;
+}
+main footer .breake-2 .contacts, main footer .breake-2 .subscribe {
+  flex: 1;
+}
+main footer .copyright {
+  padding: 10px 0 10px 10px;
+}
+
+.toys span {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  margin: 20px 0 10px 10px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

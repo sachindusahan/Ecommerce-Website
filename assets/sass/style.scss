@@ -15,6 +15,24 @@ $navBG: #E90055;
 body {
     background: #FAFAFF;
 }
+
+input[type=password],input[type=email],input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=password]:focus,input[type=email]:focus,input[type=search]:focus,input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 3px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
 * {
     margin: 0;
     padding: 0;
@@ -279,6 +297,13 @@ header {
 }
 // end of navigation bar //
 header {
+    
+    .cloths {
+        font-size: 25px;
+        font-family: "Raleway",sans-serif;
+        margin: 20px 0 10px 10px;
+        font-weight: 700;
+    }
     .tags {
         width: 100vw;
         height: 50px;
@@ -318,63 +343,23 @@ header {
     }
 }
 // hero section
-header {
-    .hero-section {
-        width: 100vw;
-        background: orange;
-        padding-bottom: 20px;
-        margin: 10px 0;
-        h4 {
-            font-family: 'Raleway',sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            padding-top: 20px;
-            animation-name: herosection;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-        }
-        h5 {
-            font-family: 'Raleway',sans-serif;
-            font-weight: bold;
-            padding: 10px 0px;
-            animation-name: herosection;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            font-size: 15px;
-        }
-        .h5 {
-            border: 1px solid #000;
-            display: inline-block;   
-            padding: 6px 10px;
-            border-radius: 5px;
-        }
-        .h5:hover {
-            border-color: #FFF;
-            color: #FFF;
-            transition: all 0.30s ease-in-out;
-        }
+.hero-section {
+    overflow: hidden;
+    img {
+        position: relative;
+        height: 300px;
     }
 }
-@media (max-width: 800px) {
-    header {
-        .hero-section {
-            padding-left: 15px;
-            h5,h4 {
-                animation-name: no;
-            }
-        }
+// end
+@media (min-width: 500px){
+// hero section
+.hero-section {
+    overflow: hidden;
+    img {
+        position: relative;
+        width: 100%;
     }
 }
-@keyframes herosection {
-    0% {
-        margin: 0 0 0 10px;
-    }
-    50% {
-        margin: 0 0 0 250px;
-    }
-    100% {
-         margin: 0 0 0 10px;
-    }
 }
 
 .first-categorie,.watchs ,.shoes{
@@ -445,7 +430,7 @@ main {
         .top {
             width: 100vw;
             height: 100px;
-            background-color: orange;
+            background-color: transparent;
             display: flex;
             flex-direction: column;
             font-family: "Raleway",sans-serif;
@@ -454,26 +439,95 @@ main {
             padding: 0 0 0 20px;
             margin: 30px 0 10px 0;
             h1 {
-                color: #000;
-                font-size: 15px;
-                font-weight: 400; // normal
-                margin: 10px 0;
-                
-            }   
-            button {
-                border: none;
-                outline: none;
-                padding: 8px 15px;
-                border: 2px solid #000;
-                font-weight: 700; // bold
-                border-radius: 5px;
-                background: transparent;
-                color: #000;
-            }  
-            button:hover {
-                color: #FFF;
-                border: 1px solid #fff;
-            }
+		        font-size: 25px;
+		        font-family: "Raleway",sans-serif;
+		        margin: 20px 0 10px 10px;
+		        font-weight: 700;
+		     }
         }
     }
 }
+
+// Footer 
+main {
+    footer {
+        font-family: 'Montserrat', sans-serif;
+        margin: 50px 0 0 0;
+        padding-top: 30px;
+        div {
+            .contacts,.company,.pages {
+                
+                margin: 20px 10px;
+                h4 {
+                    color: #797979;
+                    font-size: 15px;
+                }
+            }
+            .subscribe {
+                h6 {
+                    color: #797979;
+                    margin-bottom: 20px;
+                    font-size: 12px;
+                }
+                .email {
+                    margin-bottom: 20px;
+                    button {
+                        border:none;
+                        outline: none;
+                        height: 30.2px;
+                        padding: 0 10px;
+                        color: #FFF;
+                        font-weight: bold;
+                        background: $blue-crayola;
+                        
+                    }
+                    input {
+                        height: 30px;
+                    }
+                }
+                .contact-icons {
+                    i {
+                        margin: 0 10px;
+                        padding: 10px;
+                        border-radius: 50%;
+                    }
+                    i:hover {
+                        background: $blue-crayola;
+                        transition: background 3s;
+                    }
+                }
+            }
+        }
+        background-color: #383340;
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        .breake-2,.breake-1 {
+            display: flex;
+            flex: 1;
+        }
+        .breake-1 {
+             .pages,.company {
+                 flex: 1;
+             }
+        }
+        .breake-2 {
+             .contacts,.subscribe {
+                 flex: 1;
+             }
+        }
+        .copyright {
+            padding : 10px 0 10px 10px;
+        }
+    }
+}
+
+.toys {
+    span {
+         font-size: 25px;
+         font-family: "Raleway",sans-serif;
+         margin: 20px 0 10px 10px;
+		 font-weight: 700;
+    }
+}
+ 
