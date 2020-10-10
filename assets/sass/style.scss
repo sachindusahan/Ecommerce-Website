@@ -441,92 +441,19 @@ main {
             h1 {
 		        font-size: 25px;
 		        font-family: "Raleway",sans-serif;
-		        margin: 20px 0 10px 10px;
+		        margin: 5px 0 10px 10px;
 		        font-weight: 700;
 		     }
         }
     }
 }
 
-// Footer 
-main {
-    footer {
-        font-family: 'Montserrat', sans-serif;
-        margin: 50px 0 0 0;
-        padding-top: 30px;
-        div {
-            .contacts,.company,.pages {
-                
-                margin: 20px 10px;
-                h4 {
-                    color: #797979;
-                    font-size: 15px;
-                }
-            }
-            .subscribe {
-                h6 {
-                    color: #797979;
-                    margin-bottom: 20px;
-                    font-size: 12px;
-                }
-                .email {
-                    margin-bottom: 20px;
-                    button {
-                        border:none;
-                        outline: none;
-                        height: 30.2px;
-                        padding: 0 10px;
-                        color: #FFF;
-                        font-weight: bold;
-                        background: $blue-crayola;
-                        
-                    }
-                    input {
-                        height: 30px;
-                    }
-                }
-                .contact-icons {
-                    i {
-                        margin: 0 10px;
-                        padding: 10px;
-                        border-radius: 50%;
-                    }
-                    i:hover {
-                        background: $blue-crayola;
-                        transition: background 3s;
-                    }
-                }
-            }
-        }
-        background-color: #383340;
-        color: #FFF;
-        display: flex;
-        flex-direction: column;
-        .breake-2,.breake-1 {
-            display: flex;
-            flex: 1;
-        }
-        .breake-1 {
-             .pages,.company {
-                 flex: 1;
-             }
-        }
-        .breake-2 {
-             .contacts,.subscribe {
-                 flex: 1;
-             }
-        }
-        .copyright {
-            padding : 10px 0 10px 10px;
-        }
-    }
-}
 
 .toys {
     span {
          font-size: 25px;
          font-family: "Raleway",sans-serif;
-         margin: 20px 0 10px 10px;
+         margin: 20px 0 20px 10px;
 		 font-weight: 700;
     }
 }
