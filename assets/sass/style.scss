@@ -306,3 +306,82 @@ header {
         }
     }
 }
+
+// register
+header {
+    .register {
+        background: #111820;
+        color: #F5F5F5;
+        text-align: center;
+        margin-top: -5px;
+        p {
+            font-family: "Raleway",sans-serif;
+            font-size: 15px;
+            line-height: 1.4em;
+        }
+        a {
+            color: #fff;
+            font-family: "Raleway",sans-serif;
+            text-decoration: underline;
+            line-height: 1.4em;
+            font-size: 15px;
+        }
+    }
+}
+
+// categorie
+.products {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .categorie {
+        border-radius: 5px;
+        width: 160px;
+        height: 255px;
+        background: #FFF;
+        margin: 0 0 30px 0;
+        .image {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .info {
+            padding-left: 8px;
+            .name {
+                font-family: "Raleway",sans-serif;
+                font-weight: 700;
+            }
+            .price {
+                font-size: 20px;
+            }
+            .fs {
+                background: #f4f4f4;
+                color: #787878;
+                display: inline-block;
+                border-radius: 5px;
+                font-family: "Raleway",sans-serif;
+                padding: 4px;
+                text-transform: capitalize;
+            }
+            .star {
+                margin: 4px 0;
+                .fa-star {
+                    color: red;
+                    opacity: 0.79;
+                }
+                span {
+                    color: #555;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 750px) {
+    .products {
+       .categorie {
+           margin: 10px;
+       }      
+    }
+}
