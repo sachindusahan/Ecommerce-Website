@@ -13,7 +13,8 @@ $medium-slate-blue: rgba(130, 91, 250, 1);
 $dark-cornflower-blue: rgba(36, 67, 120, 1);
 $navBG: #E90055;
 body {
-    background: #FAFAFF;
+    background: #F4F4F4;
+    height: 200vw;
 }
 
 input[type=password],input[type=email],input[type=text], textarea {
@@ -296,49 +297,69 @@ header {
     }
 }
 // end of navigation bar //
-header {
-    
-    .cloths {
-        font-size: 25px;
-        font-family: "Raleway",sans-serif;
-        margin: 20px 0 10px 10px;
-        font-weight: 700;
-    }
-    .tags {
-        width: 100vw;
-        height: 50px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-        font-family: "Raleway", sans-serif;
-        .tag1,
-        .tag2,
-        .tag3,
-        .tag4,
-        .tag5,
-        .tag6,
-        .tag7,
-         div {
-             display: flex;
-             
-            h6 {
-                border-radius: 10px;
-                background: #Fff;
-                padding: 6px 16px;
-                box-shadow: 0 0 4px #787878;
-            }
-            h6:hover {
-                border: none;
-                box-shadow: 0 0 3px rgba(81, 203, 238, 1);
+// hero img 
+@media (min-width: 800px) {
+    header {
+        .hero-image {
+            img {
+                width: 100%;
             }
         }
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     header {
-        .tags {
-            height: 100px;
+        .hero-image {
+            img {
+                width: 100%;
+                height: 300px;
+            }
         }
     }
-} 
+}
+@media (max-width: 600px) {
+    header {
+        .hero-image {
+            img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+}
+main {
+    .category {
+        //background: #FAFAFF;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        div {
+            border: 2px solid blue;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            i {
+                font-size: 40px;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: orange;
+                color: #FFF;
+                border-radius: 50%;
+                padding: 5px 0;
+            }
+            h2 {
+                font-family: "Raleway",sans-serif;
+                font-size: 18px;
+                text-align: center;
+                margin: 5px;
+                font-weight: 300;
+            }
+        }
+    }
+}

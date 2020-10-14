@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 body {
-  background: #FAFAFF;
+  background: #F4F4F4;
+  height: 200vw;
 }
 
 input[type=password], input[type=email], input[type=text], textarea {
@@ -269,165 +270,55 @@ header nav ul.m-response .fa-search input[type=search]:focus {
     height: 40px;
   }
 }
-header .cloths {
-  font-size: 25px;
-  font-family: "Raleway", sans-serif;
-  margin: 20px 0 10px 10px;
-  font-weight: 700;
-}
-header .tags {
-  width: 100vw;
-  height: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  font-family: "Raleway", sans-serif;
-}
-header .tags .tag1,
-header .tags .tag2,
-header .tags .tag3,
-header .tags .tag4,
-header .tags .tag5,
-header .tags .tag6,
-header .tags .tag7,
-header .tags div {
-  display: flex;
-}
-header .tags .tag1 h6,
-header .tags .tag2 h6,
-header .tags .tag3 h6,
-header .tags .tag4 h6,
-header .tags .tag5 h6,
-header .tags .tag6 h6,
-header .tags .tag7 h6,
-header .tags div h6 {
-  border-radius: 10px;
-  background: #Fff;
-  padding: 6px 16px;
-  box-shadow: 0 0 4px #787878;
-}
-header .tags .tag1 h6:hover,
-header .tags .tag2 h6:hover,
-header .tags .tag3 h6:hover,
-header .tags .tag4 h6:hover,
-header .tags .tag5 h6:hover,
-header .tags .tag6 h6:hover,
-header .tags .tag7 h6:hover,
-header .tags div h6:hover {
-  border: none;
-  box-shadow: 0 0 3px #51cbee;
-}
-
-@media (max-width: 500px) {
-  header .tags {
-    height: 100px;
-  }
-}
-.hero-section {
-  overflow: hidden;
-}
-.hero-section img {
-  position: relative;
-  height: 300px;
-}
-
-@media (min-width: 500px) {
-  .hero-section {
-    overflow: hidden;
-  }
-  .hero-section img {
-    position: relative;
+@media (min-width: 800px) {
+  header .hero-image img {
     width: 100%;
   }
 }
-.first-categorie, .watchs, .shoes {
+@media (max-width: 800px) {
+  header .hero-image img {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  header .hero-image img {
+    width: 100%;
+    height: 250px;
+  }
+}
+main .category {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.first-categorie .cloths, .first-categorie .watch-brand, .watchs .cloths, .watchs .watch-brand, .shoes .cloths, .shoes .watch-brand {
-  background: #FFF;
-  width: 202px;
-  min-height: 320px;
-  margin: 20px;
+main .category div {
+  border: 2px solid blue;
+  width: 120px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.first-categorie .cloths img, .first-categorie .watch-brand img, .watchs .cloths img, .watchs .watch-brand img, .shoes .cloths img, .shoes .watch-brand img {
-  width: 200px;
-  position: relative;
-  top: 0;
-}
-.first-categorie .cloths .topic, .first-categorie .watch-brand .topic, .watchs .cloths .topic, .watchs .watch-brand .topic, .shoes .cloths .topic, .shoes .watch-brand .topic {
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  margin: 5px 0;
-}
-.first-categorie .cloths .price, .first-categorie .watch-brand .price, .watchs .cloths .price, .watchs .watch-brand .price, .shoes .cloths .price, .shoes .watch-brand .price {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  margin: 5px 0;
-}
-.first-categorie .cloths .price-blour, .first-categorie .watch-brand .price-blour, .watchs .cloths .price-blour, .watchs .watch-brand .price-blour, .shoes .cloths .price-blour, .shoes .watch-brand .price-blour {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Raleway", sans-serif;
-  margin: 5px 0;
-  color: #787878;
-  position: relative;
-}
-.first-categorie .cloths .price-blour::after, .first-categorie .watch-brand .price-blour::after, .watchs .cloths .price-blour::after, .watchs .watch-brand .price-blour::after, .shoes .cloths .price-blour::after, .shoes .watch-brand .price-blour::after {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  background: #000;
-  width: 100%;
-  height: 1px;
-}
-.first-categorie .cloths .btn, .first-categorie .watch-brand .btn, .watchs .cloths .btn, .watchs .watch-brand .btn, .shoes .cloths .btn, .shoes .watch-brand .btn {
-  border: none;
-  outline: none;
-  background: Red;
-  color: #FFF;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  padding: 4px;
-  margin: 0 0 5px 0;
-}
-.first-categorie .cloths .btn:hover, .first-categorie .watch-brand .btn:hover, .watchs .cloths .btn:hover, .watchs .watch-brand .btn:hover, .shoes .cloths .btn:hover, .shoes .watch-brand .btn:hover {
-  box-shadow: 0 0 5px #787878;
-}
-
-main .watchs .top, main .shoes .top {
-  width: 100vw;
-  height: 100px;
-  background-color: transparent;
+main .category div i {
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
   display: flex;
-  flex-direction: column;
-  font-family: "Raleway", sans-serif;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  padding: 0 0 0 20px;
-  margin: 30px 0 10px 0;
+  background: orange;
+  color: #FFF;
+  border-radius: 50%;
+  padding: 5px 0;
 }
-main .watchs .top h1, main .shoes .top h1 {
-  font-size: 25px;
+main .category div h2 {
   font-family: "Raleway", sans-serif;
-  margin: 5px 0 10px 10px;
-  font-weight: 700;
-}
-
-.toys span {
-  font-size: 25px;
-  font-family: "Raleway", sans-serif;
-  margin: 20px 0 20px 10px;
-  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
