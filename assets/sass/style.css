@@ -291,6 +291,7 @@ header .register a {
   text-decoration: underline;
   line-height: 1.4em;
   font-size: 15px;
+  transition: 1s;
 }
 
 .products {
@@ -298,6 +299,9 @@ header .register a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.products .categorie:hover {
+  background: #f5f5f5;
 }
 .products .categorie {
   border-radius: 5px;
@@ -375,6 +379,37 @@ footer .footer span {
     align-items: center;
     text-align: center;
   }
+}
+.hr-section div {
+  text-align: center;
+}
+.hr-section div button {
+  background: orange;
+  color: #555;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.hr-section div button:hover {
+  background: cyan;
+  transition: background 0.5s;
+}
+.hr-section div span {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  margin: 20px;
+}
+.hr-section .back-to-top {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  background: #111820;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: -1px;
 }
 
 /*# sourceMappingURL=style.css.map */
