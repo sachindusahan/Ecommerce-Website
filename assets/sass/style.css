@@ -347,5 +347,34 @@ header .register a {
     margin: 10px;
   }
 }
+footer {
+  padding: 20px 0;
+  background: #111820;
+  color: #FFF;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer b {
+  font-weight: 700;
+  font-size: 19px;
+}
+footer .footer span {
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
