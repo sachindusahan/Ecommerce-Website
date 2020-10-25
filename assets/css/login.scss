@@ -8,6 +8,7 @@
     font-weight: 500px;
     box-sizing: border-box;
 }
+
 form {
     position: absolute;
     top: 50%;
@@ -21,9 +22,18 @@ form {
         font-family: 'Raleway', sans-serif;
     }
     ._username_email,._password {
-        width: 500px;
+        width: 510px;
         height: 50px;
         margin: 0 0 9px 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .fa {
+            position: absolute;
+            font-size: 23px;
+            color: #787878;
+            margin-left: 8px;
+        }
         input {
             width: 100%;
             height: 100%;
@@ -32,9 +42,14 @@ form {
             border: none;
             font-size: 18px;
             font-family: 'Raleway', sans-serif;
-            padding: 0 0 0 10px;
+            padding: 0 0 0 30px;
             border: 1px solid #787878;
         }
+        input[type=password]:focus,input[type=email]:focus,input[type=search]:focus,input[type=text]:focus, textarea:focus {
+	        box-shadow: 0 0 3px rgba(81, 203, 238, 1);
+	        margin: 5px 1px 3px 0px;
+			border: 1px solid rgba(81, 203, 238, 1);
+	    }
     }
     .__forgot {
         display: flex;
@@ -49,7 +64,7 @@ form {
         }
     }
     button {
-        width: 500px;
+        width: 510px;
         height: 45px;
         border-radius: 5px;
         border: none;

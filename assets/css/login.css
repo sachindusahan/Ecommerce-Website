@@ -21,9 +21,18 @@ form h1 {
   font-family: "Raleway", sans-serif;
 }
 form ._username_email, form ._password {
-  width: 500px;
+  width: 510px;
   height: 50px;
   margin: 0 0 9px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+form ._username_email .fa, form ._password .fa {
+  position: absolute;
+  font-size: 23px;
+  color: #787878;
+  margin-left: 8px;
 }
 form ._username_email input, form ._password input {
   width: 100%;
@@ -33,8 +42,13 @@ form ._username_email input, form ._password input {
   border: none;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 30px;
   border: 1px solid #787878;
+}
+form ._username_email input[type=password]:focus, form ._username_email input[type=email]:focus, form ._username_email input[type=search]:focus, form ._username_email input[type=text]:focus, form ._username_email textarea:focus, form ._password input[type=password]:focus, form ._password input[type=email]:focus, form ._password input[type=search]:focus, form ._password input[type=text]:focus, form ._password textarea:focus {
+  box-shadow: 0 0 3px #51cbee;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #51cbee;
 }
 form .__forgot {
   display: flex;
@@ -49,7 +63,7 @@ form .__forgot a {
   color: #33ADFF;
 }
 form button {
-  width: 500px;
+  width: 510px;
   height: 45px;
   border-radius: 5px;
   border: none;
