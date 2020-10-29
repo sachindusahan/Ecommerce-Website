@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+    background: #F2F2F2;
+}
+main .main-heading .join-login {
+    font-family:"Raleway", sans-serif;
+    margin: 20px 0 40px 20px;
+    font-weight: bold;
+}
+main .ad-vi {
+    display: flex;
+    flex-direction: space-between;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 5px #f4f4f4;
+    margin: 0 20px 10px 20px;
+}
+main .ad-vi div {
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:"Raleway", sans-serif;
+    width: 50%;
+    font-size: 23px;
+}
+main .ad-vi div i {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+main .main-content1 .section-1 {
+    background: #fff;
+    display: flex;
+    font-family:"Raleway", sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    padding: 20px;
+}
+main .main-content1 .section-1 span {
+    font-weignt: bold;
+}
+main .main-content1 .section-1 a {
+    color: blue;
+    text-decoration: none;
+}
+main .main-content1 div {
+    background: #fff;
+    padding: 20px;
+    margin: 5px 0;
+}
+main .main-content1 div span {
+    font-weight: bold;
+    font-family:"Raleway", sans-serif;
+    font-size: 20px;
+}
+main .help__center {
+    margin: 10px 0;
+    padding: 15px 20px;
+    font-size: 22px;
+    display: flex;
+    font-weight: bold;
+    font-family:"Raleway", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+main .help__center i {
+    margin: 0 5px;
+}
+main button {
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-family:"Raleway", sans-serif;
+    background: green;
+    color: #fff;
+    margin: 10px 0 10px 20px;
+}
+main button i {
+    margin: 0 8px;
+    font-size: 25px;
+}
+main button:hover {
+    animation-name: button;
+    animation-duration: 2s;
+}
+@keyframes button {
+    0% {
+        background: green;
+        color: #fff
+    }
+    50% {
+        background: #fff;
+        color: #000;
+    }
+    100% {
+        background: green;
+        color: #fff;
+    }
+}
